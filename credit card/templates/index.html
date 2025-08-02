@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Detection</title>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    h1{
+        text-align: center;
+        color: #333;
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    label{
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+    input[type="text"]{
+        width: 87%;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+    }
+    input[type="submit"]{
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #218838;
+    }
+</style
+<body>
+        <h1>Credit Card Detection</h1>
+        <form method="POST" action="/add">
+                <label for="trans_date_trans_time">trans_date_trans_time</label>
+                <input type="text" id="trans_date_trans_time" name="trans_date_trans_time" maxlength="19"required><br><br>
+                <label for="cc_num">cc_num</label>
+                <input type="text" id="cc_num" name="cc_num" required><br><br>
+                <label for="category">category</label>
+                <input type="text" id="category" name="category" required><br><br>
+                <label for="AMT_TRANS<">AMT_TRANS</label>
+                <input type="text" id="AMT_TRANS" name="AMT_TRANS" required><br><br>
+                <label for="gender">gender</label>
+                <input type="text" id="gender" name="gender" required><br><br>
+                <label for="street">street</label>
+                <input type="text" id="street" name="street" required><br><br>
+                <label for="state">state</label>
+                <input type="text" id="state" name="state" required><br><br>
+                <label for="city">city</label>
+                <input type="text" id="city" name="city" required><br><br>
+                <label for="dob">dob</label>
+                <input type="text" id="dob" name="dob" required><br><br>
+                <label for="zip">zip</label>
+                <input type="text" id="zip" name="zip" required><br><br>
+                <label for="trans_num">trans_num</label>
+                <input type="text" id="trans_num" name="trans_num" required><br><br>
+                <input type="submit" value="add">
+        </form>
+</body>
+</html>
